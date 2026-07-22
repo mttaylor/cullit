@@ -468,6 +468,19 @@ Cullit includes a hosted dashboard experience with authentication, analytics, an
 - [x] Web dashboard
 - [x] Multi-repo aggregation
 
+## Community
+
+Questions, ideas, and "how do I…" — open a [GitHub Discussion](https://github.com/mttaylor/cullit/discussions) instead of an issue:
+
+- 💡 **Ideas & Feature Requests**
+- 🙏 **Q&A**
+- 📣 **Show and tell** — share how you use Cullit (we feature these in release notes)
+- 📢 **Announcements** (read-only)
+
+Bug reports still go to [Issues](https://github.com/mttaylor/cullit/issues/new/choose).
+
+---
+
 ## Contributing
 
 PRs welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
