@@ -1,0 +1,32 @@
+name: Welcome first-time contributors
+on:
+  pull_request_target:
+    types: [opened]
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome the author
+        uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            👋 Thanks for opening this — and welcome to Cullit!
+
+            A maintainer will get to this. While you wait, if you haven't yet, please:
+            - Read [CONTRIBUTING.md](https://github.com/mttaylor/cullit/blob/main/CONTRIBUTING.md)
+            - Check the [good first issues list](https://github.com/mttaylor/cullit/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) for other ways to help
+          pr-message: |
+            👋 Thanks for the PR — and welcome!
+
+            A maintainer will review. To make that faster:
+            - Confirm the PR template is fully filled in (it's loaded automatically when you opened this)
+            - Run `pnpm lint && pnpm test` locally and confirm both pass
+            - If this addresses an issue, link it: "Fixes #123"
